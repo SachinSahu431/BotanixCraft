@@ -4,7 +4,7 @@ export const Wallet = () => {
 
   return (
     <div className='standard-background'>
-      <ConnectButton accountStatus="address" />
+      <ConnectButton accountStatus="address"/>
     </div>
   );
 };
