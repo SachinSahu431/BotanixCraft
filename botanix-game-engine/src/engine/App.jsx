@@ -1,3 +1,4 @@
+import { utils } from 'ethers';
 import { useRef, useState, useContext } from "react";
 import { useEffect } from "react";
 import { GlobalContext, GlobalContextProvider } from "./GlobalContext.jsx";
@@ -40,12 +41,41 @@ import { AsciiRenderer } from "@react-three/drei";
 import { Grid } from "@react-three/drei";
 
 export default function App() {
+  useEffect(() => {
+    const addBotanixTestnet = async () => {
+      if (window.ethereum) {
+        try {
+          await window.ethereum.request({
+            method: "wallet_addEthereumChain",
+            params: [networkMap.BOTANIX_TESTNET],
+          });
+        } catch (error) {
+          console.error("Failed to setup the network:", error);
+        }
+      } else {
+        console.log("Ethereum provider is not available");
+      }
+    };
+
+    addBotanixTestnet();
+  }, []);
   return (
     <GlobalContextProvider>
       <Scene />
     </GlobalContextProvider>
   );
 }
+
+
+const networkMap = {
+  BOTANIX_TESTNET: {
+    chainId: utils.hexValue(3636), // '0xe2c'
+    chainName: "Botanix Testnet",
+    nativeCurrency: { name: "BTC", symbol: "BTC", decimals: 18 },
+    rpcUrls: ["https://node.botanixlabs.dev"],
+    blockExplorerUrls: ["https://blockscout.botanixlabs.dev/"],
+  },
+};
 
 function Scene() {
   const [height, setHeight] = useState("30%");
@@ -195,8 +225,9 @@ function Scene() {
 
       await ethereum.request({
         method: "wallet_switchEthereumChain",
-        params: [{ chainId: "0x15EB" }],
+        params: [{ chainId: networkMap.BOTANIX_TESTNET.chainId }],
       });
+
       const provider = new ethers.providers.Web3Provider(window.ethereum);
       const signer = provider.getSigner();
       setSigner(signer);

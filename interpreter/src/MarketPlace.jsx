@@ -6,6 +6,16 @@ import GameFactory from "./contracts/GameFactory.json"
 import Game from "./contracts/Game.json"
 import { Center } from "@react-three/drei"
 
+const networkMap = {
+  BOTANIX_TESTNET: {
+    chainId: utils.hexValue(3636), // '0xe2c'
+    chainName: "Botanix Testnet",
+    nativeCurrency: { name: "BTC", symbol: "BTC", decimals: 18 },
+    rpcUrls: ["https://node.botanixlabs.dev"],
+    blockExplorerUrls: ["https://blockscout.botanixlabs.dev/"],
+  },
+};
+
 const MarketPlace = () => {
   const [account, setAccount] = useState("")
   const [gameAddress, setGameAddress] = useState([])
@@ -26,7 +36,7 @@ const MarketPlace = () => {
     setAccount(accounts[0])
     await window.ethereum.request({
       method: "wallet_switchEthereumChain",
-      params: [{ chainId: "0x15EB" }],
+      params: [{ chainId: networkMap.BOTANIX_TESTNET.chainId }],
     })
     const provider = new ethers.providers.Web3Provider(window.ethereum)
     setAccount(accounts[0])

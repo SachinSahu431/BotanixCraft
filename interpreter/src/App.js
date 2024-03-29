@@ -18,6 +18,17 @@ import { Scene } from "three"
 import Swal from "sweetalert2"
 import MarketPlace from "./MarketPlace"
 
+
+const networkMap = {
+  BOTANIX_TESTNET: {
+    chainId: utils.hexValue(3636), // '0xe2c'
+    chainName: "Botanix Testnet",
+    nativeCurrency: { name: "BTC", symbol: "BTC", decimals: 18 },
+    rpcUrls: ["https://node.botanixlabs.dev"],
+    blockExplorerUrls: ["https://blockscout.botanixlabs.dev/"],
+  },
+};
+
 // Controls: WASD + left click
 
 const Model = ({ file, object }) => {
@@ -84,7 +95,7 @@ export default function App() {
 
     await window.ethereum.request({
       method: "wallet_switchEthereumChain",
-      params: [{ chainId: "0x15EB" }],
+      params: [{ chainId: networkMap.BOTANIX_TESTNET.chainId }],
     })
 
     const provider = new ethers.providers.Web3Provider(window.ethereum)
