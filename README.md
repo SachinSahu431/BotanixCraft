@@ -79,16 +79,10 @@ PRIVATE_KEY=<your_wallet_private_key>
 
 <div style="display: flex; flex-wrap: wrap;">
   <div style="flex: 50%;">
-    <img src="https://github.com/SachinSahu431/BotanixCraft/blob/main/images/ss1.png?raw=true" style="width: 100%; border: 2px solid white;" />
+    <img src="https://github.com/SachinSahu431/BotanixCraft/blob/master/images/ss1.png?raw=true" style="width: 100%; border: 2px solid white;" />
   </div>
   <div style="flex: 50%;">
-    <img src="https://github.com/SachinSahu431/BotanixCraft/blob/main/images/ss3.png?raw=true" style="width: 100%; border: 2px solid white;" />
-  </div>
-  <div style="flex: 50%;">
-    <img src="https://github.com/SachinSahu431/BotanixCraft/blob/main/images/ss4.png?raw=true" style="width: 100%; border: 2px solid white;" />
-  </div>
-  <div style="flex: 50%;">
-    <img src="https://github.com/SachinSahu431/BotanixCraft/blob/main/images/ss5.png?raw=true" style="width: 100%; border: 2px solid white;" />
+    <img src="https://github.com/SachinSahu431/BotanixCraft/blob/master/images/ss3.png?raw=true" style="width: 100%; border: 2px solid white;" />
   </div>
 </div>
 
@@ -96,21 +90,14 @@ PRIVATE_KEY=<your_wallet_private_key>
 <h4>Game Play:</h4>
 
 <div style="display: flex;">
-  <img src="https://github.com/SachinSahu431/BotanixCraft/blob/main/images/superman.png?raw=true"style="border: 2px solid white;"/>
-</div>
-<div style="display: flex;">
-  <img src="https://github.com/SachinSahu431/BotanixCraft/blob/main/images/csgo.png?raw=true"  width="49.7%" style="border: 2px solid white;"/>
-  <img src="https://github.com/SachinSahu431/BotanixCraft/blob/main/images/superman2.png?raw=true" width="49.7%" style="border: 2px solid white;"/>
-</div>
-<div style="display: flex;">
-  <img src="https://github.com/SachinSahu431/BotanixCraft/blob/main/images/game2.png?raw=true" width="49.7%" style="border: 2px solid white;"/>
-  <img src="https://github.com/SachinSahu431/BotanixCraft/blob/main/images/game3.png?raw=true" width="49.7%" style="border: 2px solid white;"/>
+  <img src="https://github.com/SachinSahu431/BotanixCraft/blob/master/images/csgo.png?raw=true"  width="49.7%" style="border: 2px solid white;"/>
+  <img src="https://github.com/SachinSahu431/BotanixCraft/blob/master/images/superman2.png?raw=true" width="49.7%" style="border: 2px solid white;"/>
 </div>
 
 <br>
 <h4>Game Store:</h4>
 <p float="left">
-  <img src="https://github.com/SachinSahu431/BotanixCraft/blob/main/images/gamestore.png?raw=true" style="border: 2px solid white;">
+  <img src="https://github.com/SachinSahu431/BotanixCraft/blob/master/images/gamestore.png?raw=true" style="border: 2px solid white;">
 </p>
 
 Don't just play the game, build it. Embrace the power of the BotanixCraft and build the future of play!
