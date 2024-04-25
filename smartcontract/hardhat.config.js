@@ -7,7 +7,7 @@ module.exports = {
   solidity: { version: "0.8.20" },
   networks: {
     testnet: {
-      url: `https://node.SpiderChainlabs.dev`,
+      url: `https://node.botanixlabs.dev`,
       accounts: [`0x${privateKey}`],
     },
   },

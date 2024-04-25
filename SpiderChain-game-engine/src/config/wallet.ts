@@ -10,7 +10,7 @@ import { NETWORK_NAME, RPC_URL, CHAIN_ID, BLOCK_EXPLORER_URL, ICON } from './env
 const SpiderChainChain: Chain = {
   id: CHAIN_ID,
   name: NETWORK_NAME,
-  network: 'SpiderChain',
+  network: 'botanix',
   rpcUrls: {
     default: {
       http: [RPC_URL],
@@ -25,7 +25,7 @@ const SpiderChainChain: Chain = {
     decimals: 18,
   },
   blockExplorers: {
-    default: { name: 'SpiderChain Block Explorer', url: BLOCK_EXPLORER_URL },
+    default: { name: 'Botanix Block Explorer', url: BLOCK_EXPLORER_URL },
   },
 };
 

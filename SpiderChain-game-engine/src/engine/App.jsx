@@ -70,10 +70,10 @@ export default function App() {
 const networkMap = {
   BOTANIX_TESTNET: {
     chainId: utils.hexValue(3636), // '0xe2c'
-    chainName: "SpiderChain Testnet",
+    chainName: "Botanix Testnet",
     nativeCurrency: { name: "BTC", symbol: "BTC", decimals: 18 },
-    rpcUrls: ["https://node.SpiderChainlabs.dev"],
-    blockExplorerUrls: ["https://blockscout.SpiderChainlabs.dev/"],
+    rpcUrls: ["https://node.botanixlabs.dev"],
+    blockExplorerUrls: ["https://blockscout.botanixlabs.dev/"],
   },
 };
 

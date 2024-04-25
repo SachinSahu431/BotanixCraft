@@ -24,9 +24,9 @@ Developers have granular control over the actions in the game and corresponding 
 
 ### 🏪 Use SpiderCraft  
 
-Create your own Game on Spiderchain : [SpiderCraft Engine](https://SpiderChain-craft-engine.vercel.app/)
+Create your own Game on Spiderchain : [SpiderCraft Engine](https://botanix-craft-engine.vercel.app/)
 
-Demo Game made using SpiderCraft : [SpiderCraft Playground](https://SpiderChain-craft-playground.vercel.app/)
+Demo Game made using SpiderCraft : [SpiderCraft Playground](https://botanix-craft-playground.vercel.app/)
 
 **Note:** In case the above links are not working, you might have to disable any ad-blocker. If you use Brave Browser, disable the Brave Shields (located on the right end of the search bar).
 
