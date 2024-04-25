@@ -403,7 +403,7 @@ function Scene() {
                   className="me-1 align-middle"
                 />
                 <h3 className="text-light">
-                  <span className="text-success">SpiderChain</span>
+                  <span className="text-success">Spider</span>
                   Craft
                 </h3>
               </div>
