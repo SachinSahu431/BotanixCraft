@@ -10,10 +10,10 @@ import { Center } from "@react-three/drei"
 const networkMap = {
   BOTANIX_TESTNET: {
     chainId: utils.hexValue(3636), // '0xe2c'
-    chainName: "Botanix Testnet",
+    chainName: "SpiderChain Testnet",
     nativeCurrency: { name: "BTC", symbol: "BTC", decimals: 18 },
-    rpcUrls: ["https://node.botanixlabs.dev"],
-    blockExplorerUrls: ["https://blockscout.botanixlabs.dev/"],
+    rpcUrls: ["https://node.SpiderChainlabs.dev"],
+    blockExplorerUrls: ["https://blockscout.SpiderChainlabs.dev/"],
   },
 };
 
@@ -157,7 +157,7 @@ const MarketPlace = () => {
     <Card sx={{ borderRadius: 0, background: "#202124", color: "white", height: "100vh" }}>
       <Card sx={{ borderRadius: 0, background: "#303134", color: "white", height: 60, padding: 2, fontSize: 20 }}>
         <b style={{ position: "absolute", left: "20px", top: "15px" }}>
-          BotanixCraft <b style={{ color: "lightgreen" }}>Store</b>{" "}
+          SpiderCraft <b style={{ color: "lightgreen" }}>Store</b>{" "}
         </b>
         <Input
           style={{ position: "absolute", top: "10px", left: "160px" }}

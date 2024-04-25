@@ -7,10 +7,10 @@ import { publicProvider } from 'wagmi/providers/public';
 
 import { NETWORK_NAME, RPC_URL, CHAIN_ID, BLOCK_EXPLORER_URL, ICON } from './env';
 
-const botanixChain: Chain = {
+const SpiderChainChain: Chain = {
   id: CHAIN_ID,
   name: NETWORK_NAME,
-  network: 'botanix',
+  network: 'SpiderChain',
   rpcUrls: {
     default: {
       http: [RPC_URL],
@@ -25,14 +25,14 @@ const botanixChain: Chain = {
     decimals: 18,
   },
   blockExplorers: {
-    default: { name: 'Botanix Block Explorer', url: BLOCK_EXPLORER_URL },
+    default: { name: 'SpiderChain Block Explorer', url: BLOCK_EXPLORER_URL },
   },
 };
 
 const { chains, publicClient, webSocketPublicClient } = configureChains(
   [
     {
-      ...botanixChain,
+      ...SpiderChainChain,
       iconUrl: ICON,
     },
     mainnet,

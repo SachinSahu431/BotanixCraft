@@ -42,7 +42,7 @@ import { Grid } from "@react-three/drei";
 
 export default function App() {
   useEffect(() => {
-    const addBotanixTestnet = async () => {
+    const addSpiderChainTestnet = async () => {
       if (window.ethereum) {
         try {
           await window.ethereum.request({
@@ -57,7 +57,7 @@ export default function App() {
       }
     };
 
-    addBotanixTestnet();
+    addSpiderChainTestnet();
   }, []);
   return (
     <GlobalContextProvider>
@@ -70,10 +70,10 @@ export default function App() {
 const networkMap = {
   BOTANIX_TESTNET: {
     chainId: utils.hexValue(3636), // '0xe2c'
-    chainName: "Botanix Testnet",
+    chainName: "SpiderChain Testnet",
     nativeCurrency: { name: "BTC", symbol: "BTC", decimals: 18 },
-    rpcUrls: ["https://node.botanixlabs.dev"],
-    blockExplorerUrls: ["https://blockscout.botanixlabs.dev/"],
+    rpcUrls: ["https://node.SpiderChainlabs.dev"],
+    blockExplorerUrls: ["https://blockscout.SpiderChainlabs.dev/"],
   },
 };
 
@@ -403,7 +403,7 @@ function Scene() {
                   className="me-1 align-middle"
                 />
                 <h3 className="text-light">
-                  <span className="text-success">Botanix</span>
+                  <span className="text-success">SpiderChain</span>
                   Craft
                 </h3>
               </div>

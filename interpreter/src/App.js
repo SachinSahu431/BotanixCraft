@@ -23,10 +23,10 @@ import MarketPlace from "./MarketPlace"
 const networkMap = {
   BOTANIX_TESTNET: {
     chainId: utils.hexValue(3636), // '0xe2c'
-    chainName: "Botanix Testnet",
+    chainName: "SpiderChain Testnet",
     nativeCurrency: { name: "BTC", symbol: "BTC", decimals: 18 },
-    rpcUrls: ["https://node.botanixlabs.dev"],
-    blockExplorerUrls: ["https://blockscout.botanixlabs.dev/"],
+    rpcUrls: ["https://node.SpiderChainlabs.dev"],
+    blockExplorerUrls: ["https://blockscout.SpiderChainlabs.dev/"],
   },
 };
 
