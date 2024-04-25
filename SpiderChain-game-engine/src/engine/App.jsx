@@ -42,7 +42,7 @@ import { Grid } from "@react-three/drei";
 
 export default function App() {
   useEffect(() => {
-    const addBotanixTestnet = async () => {
+    const addSpiderChainTestnet = async () => {
       if (window.ethereum) {
         try {
           await window.ethereum.request({
@@ -57,7 +57,7 @@ export default function App() {
       }
     };
 
-    addBotanixTestnet();
+    addSpiderChainTestnet();
   }, []);
   return (
     <GlobalContextProvider>
@@ -403,7 +403,7 @@ function Scene() {
                   className="me-1 align-middle"
                 />
                 <h3 className="text-light">
-                  <span className="text-success">Botanix</span>
+                  <span className="text-success">Spider</span>
                   Craft
                 </h3>
               </div>
